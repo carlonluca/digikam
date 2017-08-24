@@ -68,6 +68,8 @@ public:
     void toggleTag(int tag);
     void updateTags(const QUrl& url, const QStringList& tags);
 
+    bool isAutoPlayEnabled();
+
 Q_SIGNALS:
 
     void signalRatingChanged(const QUrl&, int);

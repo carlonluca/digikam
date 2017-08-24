@@ -560,6 +560,11 @@ void SlideShow::updateTags(const QUrl& url, const QStringList& tags)
     dispatchCurrentInfoChange(url);
 }
 
+bool SlideShow::isAutoPlayEnabled()
+{
+    return d->settings.autoPlayEnabled;
+}
+
 void SlideShow::toggleTag(int tag)
 {
     emit signalToggleTag(currentItem(), tag);

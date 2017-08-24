@@ -220,7 +220,7 @@ void SlideOSD::slotStart()
 {
     d->parent->slotLoadNextItem();
     d->progressTimer->start(d->refresh);
-    pause(false);
+    pause(!d->parent->isAutoPlayEnabled());
 }
 
 SlideToolBar* SlideOSD::toolBar() const
